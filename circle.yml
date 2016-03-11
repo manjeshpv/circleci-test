@@ -1,11 +1,12 @@
+general:
+  build_dir: dist
 deployment:
   production:
     branch: master
     commands:
       - chmod +x deploy-production.sh
       - ./deploy-production.sh
-  production:
+  staging:
     branch: staging
     commands:
-      - chmod +x deploy-staging.sh
-      - ./deploy-staging.sh
+      - git push -f https://github.com/manjeshpv/circleci-test.dist

@@ -12,7 +12,13 @@ echo "Git Init"
 git init
 
 echo "Adding Remote"
-git clone https://github.com/manjeshpv/circleci-test.dist
+git init
+git remote add origin https://github.com/manjeshpv/circleci-test.dist
+
+echo "Git remote"
+git remote -v
+
+git checkout -b staging
 
 echo date >> index.html
 
@@ -23,7 +29,7 @@ echo "Commiting..."
 git commit -m "Todo: comming Message"
 
 echo "Started deploying"
-git push origin partner/staging
+git push -u origin partner/staging
 
 echo "Pushed to git successfully Successfully!"
 exit 0

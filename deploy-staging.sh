@@ -11,12 +11,16 @@ git config --global user.name "Manjesh V"
 echo "Git Init"
 git init
 
+echo "Git Clean"
+git clean -f -n
+
 echo "Adding Remote"
-git init
 git remote add origin https://github.com/manjeshpv/circleci-test.dist
 
 echo "Git remote"
 git remote -v
+
+git pull
 
 git checkout -b partner/staging
 

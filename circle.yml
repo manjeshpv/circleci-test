@@ -2,5 +2,10 @@ deployment:
   production:
     branch: master
     commands:
-      - chmod +x deploy.sh
-      - ./deploy.sh
+      - chmod +x deploy-production.sh
+      - ./deploy-production.sh
+  production:
+    branch: staging
+    commands:
+      - chmod +x deploy-staging.sh
+      - ./deploy-staging.sh

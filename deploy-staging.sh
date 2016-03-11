@@ -18,7 +18,7 @@ git remote add origin https://github.com/manjeshpv/circleci-test.dist
 echo "Git remote"
 git remote -v
 
-git checkout -b staging
+git checkout -b partner/staging
 
 echo date >> index.html
 
